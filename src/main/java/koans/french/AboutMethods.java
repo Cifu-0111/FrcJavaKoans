@@ -26,6 +26,18 @@ public class AboutMethods {
      * 
      */
     public static void computeAgeIn5And10And20YearsConsole() {
+        System.out.println("Quel âge as tu?");
+        String ageEnTex1 = readLine();
+        int ageEnNb1 = Integer.parseInt(ageEnTex1);
+        System.out.println("Dans 5 ans, tu auras " + (ageEnNb1 + 5 ) + " ans.");
+        System.out.println("Quel âge as tu?");
+        String ageEnTex2 = readLine(); 
+        int ageEnNb2 = Integer.parseInt(ageEnTex2);
+        System.out.println("Dans 10 ans, tu auras " + (ageEnNb2 + 10 ) + " ans.");
+        System.out.println("Quel âge as tu?");
+        String ageEnTex3 = readLine();
+         int ageEnNb3 = Integer.parseInt(ageEnTex3);
+        System.out.println("Dans 20 ans, tu auras " + (ageEnNb3 + 20 ) + " ans.");
 
     }
 
@@ -117,7 +129,10 @@ public class AboutMethods {
      * 
      */
     public static void computeAgeIn5And10And20YearsConsoleWithMethod() {
-
+        question("Quel âge as tu?");
+        String ageEnText1 = readLine();
+        int ageEnNb1 =Integer.parseInt(ageEnText1) 
+        System.out.println("Dans 5 ans, tu auras ");
     }
 
     /**

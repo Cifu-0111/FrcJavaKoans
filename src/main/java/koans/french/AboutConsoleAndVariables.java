@@ -28,7 +28,7 @@ public class AboutConsoleAndVariables {
      * 
      */    
     public static void sayHelloInConsole() {
-
+        System.out.println("Hello!");
     }
 
     /**
@@ -57,6 +57,7 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void computeTwoAndTwo() {
+        System.out.println(2+2);
 
     }
 
@@ -100,6 +101,8 @@ public class AboutConsoleAndVariables {
      * 4
      */
     public static void createAndDisplayAVariable() {
+        int pomme = 4;
+        System.out.println(pomme);
 
     }
 
@@ -120,7 +123,8 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void createAndDisplayAStringVariable() {
-
+        String tomate = "Hello!";
+        System.out.println(tomate);
     }
 
 
@@ -155,7 +159,10 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void askAndDisplayNameInConsole() {
-
+        System.out.println("Quel est ton nom?");
+        String someText = readLine();
+        System.out.println("Ton nom est:");
+        System.out.println(someText);
     }
 
     /**
@@ -201,7 +208,9 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void askAndDisplayNameOnASingleLineInConsole() {
-
+        System.out.println("Quel est ton nom?");
+        String orange = readLine();
+        System.out.println("Ton nom est: " + orange);
     }
 
     /**
@@ -229,7 +238,11 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void askNameAndAgeInConsole() {
-
+        System.out.println("Quel est ton nom?");
+        String manzana = readLine();
+        System.out.println("Quel âge as tu?");
+        String pera = readLine();
+        System.out.println("Ton nom est " + manzana +" et ton âge est " + pera + " ans." );
     }
 
     
@@ -268,5 +281,9 @@ public class AboutConsoleAndVariables {
      */
     public static void computeAgeIn5YearsConsole() {
 
+        System.out.println("Quel âge as tu?");
+        String ageEnTex = readLine();
+        int ageEnNb = Integer.parseInt(ageEnTex);
+        System.out.println("Dans 5 ans, tu auras " + (ageEnNb + 5) + " ans.");
     }
 }
