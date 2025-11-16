@@ -38,7 +38,6 @@ public class AboutMethods {
         String ageEnTex3 = readLine();
          int ageEnNb3 = Integer.parseInt(ageEnTex3);
         System.out.println("Dans 20 ans, tu auras " + (ageEnNb3 + 20 ) + " ans.");
-
     }
 
     /**
@@ -128,11 +127,19 @@ public class AboutMethods {
      * Dans 20 ans, tu auras [Le 3e âge tapé ci dessus + 20] ans.
      * 
      */
+
+
+
+     public static void askAge(int years) {
+        System.out.println("Quel âge as tu?");
+        String ageEnText = readLine();
+        int ageEnNb = Integer.parseInt(ageEnText);
+        System.out.println("Dans " + years + " ans, tu auras " + (ageEnNb + years) + " ans.");
+     }
     public static void computeAgeIn5And10And20YearsConsoleWithMethod() {
-        question("Quel âge as tu?");
-        String ageEnText1 = readLine();
-        int ageEnNb1 =Integer.parseInt(ageEnText1) 
-        System.out.println("Dans 5 ans, tu auras ");
+        askAge(5);
+        askAge(10);
+        askAge(20);
     }
 
     /**
@@ -194,9 +201,9 @@ public class AboutMethods {
      * 
      */
     public static int square(int number) {
-        return 0;
+        return number * number;
     }    
-
+   
     /**
      * # Retourner l'opposé d'un nombre
      * 
@@ -214,7 +221,9 @@ public class AboutMethods {
      * opposite(-5) devrait retourner 5
      * 
      */
-
+    public static int opposite(int number) {
+        return number * -1;
+    }
 
     /**
      * # Aider une fermière
@@ -229,4 +238,7 @@ public class AboutMethods {
      * legs(2, 3, 4) devrait retourner 32
      * 
      */
+    public static int legs(int poulets, int cochons, int vaches) {
+        return poulets * 2 + cochons * 4 + vaches * 4;
+    }
 }
